@@ -126,6 +126,71 @@ Autentica al usuario y devuelve el token.
 - Documentar las respuestas de error de la API para depuración.  
 
 ---
+## Estructura de DTOs de Contratos (ejemplos)
+- Contrato CFE
+```
+{
+  "$Tipo": "ContratoCFE",
+  "id": "68a7875adf255f466e564671",
+  "tipoContrato": "ContratoCFE",
+  "noContrato": "6875686",
+  "estatus": "ACTIVO",
+  "detalleContrato" : [{
+        "partidaContrato" : "1",
+        "descripcionAviso" : "Transformador",
+        "areaDestinoCFE" : "CFE",
+        "cantidad" : 10,
+        "unidad": "PIEZA",
+        "importeTotal": 1000
+  }],
+  "urlArchivo" : "https://www.cfe.mx",
+  "mD5": "",
+  "fechaEntregaCFE":"2025-07-18T17:25:06.51Z"
+}
+```
+- Contrato CFE con garantía
+```
+{
+  "$Tipo": "ContratoCFEConGarantia",
+  "id": "",
+  "tipoContrato": "ContratoCFEConGarantia",
+  "noContrato": "6875686",
+  "estatus": "ACTIVO",
+  "detalleContrato" : [{
+        "partidaContrato" : "1",
+        "descripcionAviso" : "Transformador",
+        "areaDestinoCFE" : "CFE",
+        "cantidad" : 100,
+        "unidad": "PIEZA",
+        "importeTotal": 1000
+  }],
+  "perdidasGarantizadasVacio": 2131.90,
+  "perdidasGarantizadasCarga": 23.90,
+  "urlArchivo" : "https://www.cfe.mx",
+  "mD5": "",
+  "fechaEntregaCFE":"2025-07-18T17:25:06.51Z"
+}
+
+```  
+- Contrato Particular  
+```
+{
+  "$Tipo": "ContratoParticular",
+  "id": "",
+  "tipoContrato": "ContratoParticular",
+  "noContrato": "PART0001",
+  "estatus": "ACTIVO",
+  "detalleContrato" : [{
+        "partidaContrato" : "1",
+        "descripcionAviso" : "Transformador",
+        "cantidad" : 100,
+        "unidad": "PIEZA",
+        "importeTotal": 1000
+  }]
+}
+```
+
+---
 
 ## Contacto y Soporte
 Para dudas o incidencias: [Soporte Técnico SID](mailto:jira@lapem01.atlassian.net)
