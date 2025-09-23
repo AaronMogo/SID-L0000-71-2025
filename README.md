@@ -128,7 +128,7 @@ Autentica al usuario y devuelve el token.
 ---
 ## Estructura de DTOs de Contratos (ejemplos)
 - Contrato CFE
-```
+```json
 {
   "$Tipo": "ContratoCFE",
   "id": "68a7875adf255f466e564671",
@@ -149,7 +149,7 @@ Autentica al usuario y devuelve el token.
 }
 ```
 - Contrato CFE con garantía
-```
+```json
 {
   "$Tipo": "ContratoCFEConGarantia",
   "id": "",
@@ -173,7 +173,7 @@ Autentica al usuario y devuelve el token.
 
 ```  
 - Contrato Particular  
-```
+```json
 {
   "$Tipo": "ContratoParticular",
   "id": "",
